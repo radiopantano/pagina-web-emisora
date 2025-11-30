@@ -1,40 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Radio Pantano - Inicio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Radio Pantano - Emisora Comunitaria</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fa;
+    }
+    header {
+      background: linear-gradient(90deg, #003a7d, #006ad4);
+      color: white;
+      padding: 25px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1525182008055-f88b95ff7980') center/cover;
+      height: 65vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 0 3px 10px rgba(0,0,0,0.7);
+      text-align: center;
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.4rem;
+    }
+    .section {
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+    footer {
+      background: #003a7d;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h2>Radio Pantano</h2>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#historia">Historia</a>
+      <a href="#programacion">Programación</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
-<header>
-    <h1>Radio Pantano</h1>
-    <p>La voz de la comunidad</p>
-</header>
+  <section class="hero" id="inicio">
+    <div>
+      <h1>Bienvenidos a Radio Pantano</h1>
+      <p>La voz de la comunidad, transmitiendo cultura, música y participación.</p>
+    </div>
+  </section>
 
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href="historia.html">Historia</a>
-    <a href="repertorio.html">Repertorio</a>
-    <a href="programacion.html">Programación</a>
-    <a href="locutores.html">Locutores</a>
-    <a href="contacto.html">Contacto</a>
-    <a href="admin.html">Administración</a>
-</nav>
+  <section class="section" id="historia">
+    <h2>Nuestra Historia</h2>
+    <p>Radio Pantano nació con el propósito de conectar a la comunidad a través de la comunicación popular, promoviendo valores, identidad y participación ciudadana.</p>
+  </section>
 
-<main>
-    <h2>Bienvenidos a Radio Pantano</h2>
-    <p>Transmitiendo desde la comunidad para la comunidad, llevando información, música, cultura y participación ciudadana.</p>
+  <section class="section" id="programacion">
+    <h2>Programación Destacada</h2>
+    <div class="features">
+      <div class="card">
+        <h3>Noticias al Día</h3>
+        <p>Información actualizada para mantenerte informado.</p>
+      </div>
+      <div class="card">
+        <h3>Música Local</h3>
+        <p>Talento de la región sonando para toda la comunidad.</p>
+      </div>
+      <div class="card">
+        <h3>Voces del Pueblo</h3>
+        <p>Espacio abierto para la participación ciudadana.</p>
+      </div>
+    </div>
+  </section>
 
-    <h3>Radio en Vivo</h3>
-    <audio controls>
-        <source src="TU_STREAM_AQUI" type="audio/mpeg">
-    </audio>
-</main>
+  <section class="section" id="contacto">
+    <h2>Contacto</h2>
+    <p>Correo: radiopantano@gmail.com</p>
+    <p>Teléfono: +58 000-0000000</p>
+  </section>
 
-<footer>
+  <footer>
     © 2025 Radio Pantano - Emisora Comunitaria
-</footer>
-
+  </footer>
 </body>
 </html>
